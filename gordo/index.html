@@ -1,13 +1,41 @@
 <!-- Gordo Assignment: HTML Prototype Document -->
 
-<!-- STILL NEED:
-    - lists
-    - inline AND block level quote
-    - table with 5 rows and columns (horizontal headings, with caption and scope)
-    - an image of Gordo
-    - navigation to: Home, About, UALR, Contact
-    - footer (h6)
-
+<!-- 
+    CHECKLIST
+    DONE // - Proper Doctype -- HTML5
+    DONE // - Use XHTML Syntax (All tags lowercase and closed)
+    DONE // - Properly declare the document language
+    DONE // - Head Section Requirements -- Place an HTML Comment after each element in the head section explaining its purpose.
+    DONE // - - Title
+    DONE // - - Metatags
+    DONE // - - - Description
+    DONE // - - - Author
+    DONE // - - - Character Encoding
+    - Body Requirements
+    - - Page Sections (<div id=”section-name”> or HTML5 Structural Elements where they apply)
+    DONE // - - - container -- surrounds all elements within the body
+    DONE // - - - header -- surrounds <h1> text
+    DONE // - - - content --  This section should contain examples of the following elements. You can use the sample content from this document or create your own if you prefer.
+    DONE // - - - - <h2> thru <h5>
+    DONE // - - - - <p>
+    DONE // - - - - <strong>
+    DONE // - - - - <em>
+    DONE // - - - - Three types of lists
+    DONE // - - - - - ordered
+    DONE // - - - - - unordered
+    DONE // - - - - - definition list
+    DONE // - - - - A properly marked up quote
+    DONE // - - - - A table consisting of 5 rows and 5 columns with a horizontal heading – Make sure you include the caption and scope attributes appropriately. (You can make up content for this)
+    DONE // - - - - <img> -- the image source should be set to Gordo. Make sure you have all attributes.
+    - - - navigation -- That contains the following elements:
+    - - - - An unordered list with four list items as links with a title attribute
+    - - - - - Home
+    - - - - - About
+    - - - - - UALR -- Set target attribute to _blank
+    - - - - - Contact
+    - - - footer
+    - - - - h6 that includes a copyright symbol, the year, your name, a link that will send an email, and a Back to Top anchor link that returns the user to the top of the page.
+-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -41,7 +69,7 @@
         entry into space was a <strong>modest</strong> slowing ofhis pulse.</p>
         
         <header>
-        <h2>The Mission</h2>
+        <h3>The Mission</h3>
         </header>
         <p>The rocket carrying Gordo into space would take off from the          <!-- Paragraph for "The Mission" -->
         Atlantic Missile Range at Cape Canaveral, travel further than any
@@ -52,11 +80,21 @@
         <blockquote>"We all heard the rumors that they want to send a monkey up  <!-- Block level quote about monkeys or something -->
         first. Well, none of us wants to think that they're gonna send a monkey
         up to do a man's work ... what they're trying to do to us is send a man
-        up to do a monkey's work."<cite>Deke Slayton, Mercury Seven Astronaut
+        up to do a monkey's work."    <cite>Deke Slayton, Mercury Seven Astronaut
         </cite></blockquote>
         
+        <dl>                                                                     <!-- Definition List (Gordo's mission details) -->
+            <dt>Gordo's Mission Details</dt>
+            <dd>Flight Date: December 13, 1958</dd>
+            <dd>Launch Time: 03.53 EST</dd>
+            <dd>Flight Time: 15 Minutes</dd>
+            <dd>Apogee: 310 Miles</dd>
+        </dl>
+        
+        <img src="https://thomaswallace.net/wp-content/uploads/2018/02/gordo.jpeg" alt="Gordo in his space monkey suit by an American flag">
+        
         <header>
-        <h2>The Jupiter AM-13</h2>
+        <h4>The Jupiter AM-13</h4>
         </header>
         <p>The Jupiter IRBM (Intermediate Range Ballistic Missile) was
         originally developed by the US Army as a long-range successor
@@ -64,24 +102,69 @@
         and deployed by the USAF for political reasons. It was also the
         only one of the United States' early stategic ballistic
         missiles with some mobility.</p>
-        <p>Flight Date: December 13, 1958</p>
-        <p>Launch Time: 03.53 EST</p>
+        
+        <table border="1">
+            <caption>Gordo! (Plus some random numbers for filler content)</caption>
+            <tr>
+                <th scope="col">Gordo</th>
+                <th scope="col">The</th>
+                <th scope="col">Space</th>
+                <th scope="col">Monkey</th>
+                <th scope="col">999</th>
+            </tr>
+            <tr>
+                <td>Gordo 778</td>
+                <td>Gordo 847</td>
+                <td>Gordo 774</td>
+                <td>Gordo 320</td>
+                <td>Gordo 379</td>
+            </tr>
+            <tr>
+                <td>Gordo 982</td>
+                <td>Gordo 232</td>
+                <td>Gordo 698</td>
+                <td>Gordo 652</td>
+                <td>Gordo 555</td>
+            </tr>
+            <tr>
+                <td>Gordo 842</td>
+                <td>Gordo 962</td>
+                <td>Gordo 606</td>
+                <td>Gordo 748</td>
+                <td>Gordo 089</td>
+            </tr>
+            <tr>
+                <td>Gordo 531</td>
+                <td>Gordo 760</td>
+                <td>Gordo 641</td>
+                <td>Gordo 828</td>
+                <td>Gordo 660</td>
+            </tr>
+            
+            
+        </table>
         
         <header>
-        <h2>The Journey</h2>
+        <h5>The Journey</h5>
         </header>
         <p>Gordo wore a specially customised space suit custom made for a
         monkey about one foot tall. The space suit was fitted with instruments,
         including temperature meters and microphones which recorded his
         historic suborbital journey, considered one of the outstanding
         achievements of space research.</p>
-        <p>Flight Time: 15 Minutes</p>
-        <p>Apogee: 310 Miles</p>
+        
+        <ul>                                                                     <!-- Unordered List (Flight Details) -->
+            <li>Flight Time: 15 Minutes</li>
+            <li>Apogee: 310 Miles</li>
+        </ul>
+        
         <aside>
             <h2>References</h2>
-            <p>Remembering 'Gordo'</p>
-            <p>BBC - Monkey Lost After Space Flight</p>
-            <p>Gordo and Laika - Space Pioneers</p>
+            <ol>                                                                 <!-- Ordered List (References) -->
+                <li>Remembering 'Gordo'</li>
+                <li>BBC - Monkey Lost After Space Flight</li>
+                <li>Gordo and Laika - Space Pioneers</li>
+            </ol>
         </aside>
     </section>                                                                   <!-- #content -->
     
