@@ -1,0 +1,93 @@
+body {
+    /* display: flex;*/
+    font-family: 'Share Tech', sans-serif;
+    
+    justify-content: center;
+    background-color: #28388a;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+#nav-header {
+    background-color: white;
+    font-size: 40px;
+    text-align: center;
+    max-width: 95vw;
+    margin: 10px auto;
+    margin-top: 50px;
+}
+
+#primary {
+    background-color: #C8C8C8;
+    padding: 5px;
+    max-width: 90vw;
+    margin: 10px auto 20px auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+#spacex-logo {
+    width: 68%;
+    max-height: 300px;
+    /* height: 200px;*/
+}
+
+#dragon-logo {
+    width: 24%;
+    max-height: 300px;
+}
+#nav-header img{
+    max-width: 90%;
+}
+
+.information {
+    background-color: white;
+    border-radius: 10px;
+    border-color: white;
+    max-width: 70vw;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.information h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+.info-content {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.information img {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+\
+
+
+#primary-header{
+    background-color: white;
+}
+
+#article-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#primary-info, .information ul {
+    margin: 40px;
+}
